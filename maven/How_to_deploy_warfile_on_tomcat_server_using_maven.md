@@ -16,15 +16,15 @@ Procedure
      <plugins>
      <plugin>
    			<groupId>org.apache.tomcat.maven</groupId>
-   			<artifactId>tomcat8-maven-plugin</artifactId>
+   			<artifactId>tomcat7-maven-plugin</artifactId>
    			<version>2.2</version>
-   		<configuration>
+   	  	<configuration>
       		<url>http://localhost:8080/manager/text</url>
       		<server>TomcatServer</server>
       		<path>/helloworld-webapp</path>
-   		</configuration>
-   </plugin>
-   </plugins>
+   		  </configuration>
+     </plugin>
+     </plugins>
    ```
 
 1. create settings.xml for credentials 
