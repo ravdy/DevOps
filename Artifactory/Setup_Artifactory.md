@@ -13,7 +13,7 @@ JFrog Artifactory is a universal DevOps solution providing end-to-end automation
    ```sh 
     yum install java-1.8* -y 
    ```
-1. Download Artifactory pckages onto /opt/   
+1. Download Artifactory packages onto /opt/   
    For Latest version of Artifactory OSS [download it from here](https://jfrog.com/open-source/)   
 For Older version of Artifactory OSS [download it from here](https://jfrog.bintray.com/artifactory/)   
 For Latest version of Artifactory Pro [download it from here](https://jfrog.com/artifactory/)
@@ -49,7 +49,7 @@ For Latest version of Artifactory Pro [download it from here](https://jfrog.com/
 ---
 ---
 
-### Integrate Artifactory with Jenkins [Click here]()
-### Integrate Artifactory with Maven [Click here]()
-### How to install Maven on EC2 instance [Click here]()
-### How to install Jenkins on EC2 instance [Click here]()
+### Integrate Artifactory with Jenkins [Click here](https://youtu.be/BVxhLIfunmI)
+### Integrate Artifactory with Maven [Yet to release]()
+### How to install Maven on EC2 instance [Click here](https://youtu.be/wgfsVmHnAiM)
+### How to install Jenkins on EC2 instance [Click here](https://youtu.be/M32O4Yv0ANc)
