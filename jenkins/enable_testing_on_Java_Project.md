@@ -14,7 +14,7 @@ Procedure:
 
 1. Create a Maven Project
    GitHub URL : https://github.com/ravdy/spring-petclinic.git  
-   Maven Goals: clean package checkstyle:checkstyle findbugs:findbugs pmd:pmd
-   Build settings: chose checkstyle, findbugs, pmd
+   Maven Goals: clean package checkstyle:checkstyle findbugs:findbugs pmd:pmd  
+   Build settings: chose checkstyle, findbugs, pmd  
 
 2. Run you job
