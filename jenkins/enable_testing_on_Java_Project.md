@@ -5,7 +5,7 @@
 2. Maven setup
 
 ### Procedure: 
-1. Install below plugions
+1. Install below plug-ins
    1. Junit
    2. FindBugs
    3. PMD
