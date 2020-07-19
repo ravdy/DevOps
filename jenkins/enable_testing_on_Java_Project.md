@@ -4,7 +4,7 @@
 1. Jenkins server on T2.Medium instance
 2. Maven setup
 
-Procedure: 
+### Procedure: 
 1. Install below plugions
    1. Junit
    2. FindBugs
