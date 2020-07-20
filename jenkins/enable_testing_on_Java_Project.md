@@ -13,7 +13,7 @@
    5. Static Analysis Collector
 
 1. Create a Maven Project  
-   GitHub URL : https://github.com/ravdy/spring-petclinic.git  
+   GitHub URL : https://github.com/ravdy/petclinic.git  
    Maven Goals: clean package checkstyle:checkstyle findbugs:findbugs pmd:pmd  
    Build settings: chose checkstyle, findbugs, pmd  
 
