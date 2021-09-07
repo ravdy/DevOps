@@ -12,10 +12,10 @@ SonarQube is an open-source static testing analysis software, it is used by deve
    ```
 
 ## Install & Setup Postgres Database for SonarQube
-`Source: https://www.postgresql.org/download/linux/ubuntu/`
-1. Install Postgres database 
-  ``sh 
-  sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+`Source: https://www.postgresql.org/download/linux/ubuntu/`  
+1. Install Postgres database   
+  ```sh 
+  sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'  
   wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
   sudo apt-get update
   sudo apt-get -y install postgresql
