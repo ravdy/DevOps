@@ -4,7 +4,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
 ## 🧰 Prerequisites
 
 Source: https://docs.sonarqube.org/latest/requirements/requirements/
-1. An EC2 instance with a minimum of 2 GB Ram (t2.small)  
+1. An EC2 instance with a minimum of 2 GB RAM (t2.small)  
 1. Java 11 installation   
 1. SonarQube cannot be run as root on Unix-based systems, so create a dedicated user account for SonarQube if necessary.
 
