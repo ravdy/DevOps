@@ -14,10 +14,9 @@ Integration Steps
 ### On Jenkins server 
 
 1. Install Sonarqube plugin
-2. Configure Sonarqube credentials 
-3. Install SonarScanner (needed only for the pipeline)
-4. Run Maven Job
-5. Run Pipeline job 
+1. Configure Sonarqube credentials 
+1. Install SonarScanner
+1. Run Pipeline job 
 
 
 ## 🧹 CleanUp  
