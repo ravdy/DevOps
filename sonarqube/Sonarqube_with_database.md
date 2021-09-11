@@ -134,7 +134,7 @@ apt install net-tools
  1. Make sure port 9000 is opened at security group leave
  2. start sonar service as a sonar user 
  3. user correct database credentials in the sonar.properties
- 4. user instance which has atleast 2 GB of RAM
+ 4. use instance which has atleast 2 GB of RAM
  
 
    
