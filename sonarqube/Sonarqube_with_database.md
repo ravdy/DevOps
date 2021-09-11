@@ -7,7 +7,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
 2. Install Java-11
   ```sh 
    apt-get update   
-   apt-get list | grep openjdk-11  
+   apt  list | grep openjdk-11  
    apt-get install openjdk-11-jdk -y   
    ```
 
