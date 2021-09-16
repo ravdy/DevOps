@@ -20,7 +20,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    
    #on RedHat/CentOs 
    #yum install epel-release # repository that provides 'daemonize'
-     #yum install java-11-openjdk-devel
+   #yum install java-11-openjdk-devel
    #yum install jenkins
    ```
 
