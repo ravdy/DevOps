@@ -25,7 +25,7 @@ Log into the Jenkins
    
     `repository` --> `settings` --> `webhooks`  
   - Add webhook
-       - Payload URL : `Jenkins_IP>:8080/github-webhook`
+       - Payload URL : `Jenkins_IP>:8080/github-webhook/`
        - Content type : `Application/JSON`   
 
 3. Update the code with new commit. It should trigger our job in the jenkins  
