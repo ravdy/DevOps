@@ -4,7 +4,7 @@ job('DSL_JobForLoginApp'){
 	   git("https://github.com/ravdy/javaloginapp.git", master)
 	}
 	triggers{
-	  scm(1 2 * * *)
+	  scm('1 2 * * *')
 }
 
   steps {
