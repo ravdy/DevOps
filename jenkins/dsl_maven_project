@@ -1,0 +1,16 @@
+job('DSL_JobForLoginApp'){
+	description ("Creating  LoginApp maven project using DSL job")
+	scm {
+	   git("https://github.com/ravdy/javaloginapp.git", master)
+	}
+	triggers
+	 scm(* * * * *)
+}
+
+  steps {
+     maven('clean package')
+  }
+
+  publishers { 
+    archiveArtifacts '**/*.war'
+   }
