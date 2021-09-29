@@ -3,8 +3,8 @@ job('DSL_JobForLoginApp'){
 	scm {
 	   git("https://github.com/ravdy/javaloginapp.git", master)
 	}
-	triggers
-	 scm(1 2 * * *)
+	triggers{
+	  scm(1 2 * * *)
 }
 
   steps {
@@ -14,3 +14,4 @@ job('DSL_JobForLoginApp'){
   publishers { 
     archiveArtifacts '**/*.war'
    }
+ }
