@@ -65,18 +65,18 @@ Both CMD and ENTRYPOINT instructions define what command gets executed when runn
 
 Dockerfile should specify at least one of CMD or ENTRYPOINT commands.
 
-`ENTRYPOINT` -  should be defined when using the container as an executable.
+- `ENTRYPOINT` -  should be defined when using the container as an executable.
 
 CMD should be used as a way of defining default arguments for an ENTRYPOINT command or for executing an ad-hoc command in a container.
 
 CMD will be overridden when running the container with alternative arguments.
 
-`VOLUME` - The VOLUME instruction creates a mount point with the specified name and marks it as holding externally mounted volumes from native host or other containers. 
+- `VOLUME` - The VOLUME instruction creates a mount point with the specified name and marks it as holding externally mounted volumes from native host or other containers. 
 
-`USER` - The USER instruction sets the user name to use when running the image
-`WORKDIR` - The WORKDIR instruction sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions
+- `USER` - The USER instruction sets the user name to use when running the image
+- `WORKDIR` - The WORKDIR instruction sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions
 
-`ARG` - The ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command using the --build-arg <varname>=<value> flag. 
+- `ARG` - The ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command using the --build-arg <varname>=<value> flag. 
 
 - `SHELL` - The SHELL instruction allows the default shell used for the shell form of commands to be overridden. 
 
