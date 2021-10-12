@@ -29,16 +29,15 @@ DockerFile
 
 2. Docker distributes official versions of the images that can be used for building Dockerfiles under docker/dockerfile repository on Docker Hub.
 
-
 - `FROM` - A valid Dockerfile must start with a FROM instruction.
 
 - `RUN` - The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile.
 
 - `CMD` - The main purpose of a CMD is to provide defaults for an executing container. 
 
-`Note:` There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect.
+   `Note:` There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect.
 
-`Note` - Do not confuse RUN with CMD. RUN actually runs a command and commits the result; CMD does not execute anything at build time, but specifies the intended command for the image.
+   `Note` - Do not confuse RUN with CMD. RUN actually runs a command and commits the result; CMD does not execute anything at build time, but specifies the intended command for the image.
 
 - `LABEL` -The LABEL instruction adds metadata to an image. A LABEL is a key-value pair. T
 
@@ -51,25 +50,22 @@ DockerFile
 
 - `ADD` - The ADD instruction copies new files, directories or remote file URLs from <src> and adds them to the filesystem of the image at the path <dest>.
 
-   If <src> is a local tar archive in a recognized compression format (identity, gzip, bzip2 or xz) then it is unpacked as a directory. 
+    If <src> is a local tar archive in a recognized compression format (identity, gzip, bzip2 or xz) then it is unpacked as a directory. 
 
 - `COPY` - The COPY instruction copies new files or directories from <src> and adds them to the filesystem of the container at the path <dest>.
 
 - `ENTRYPOINT` - An ENTRYPOINT allows you to configure a container that will run as an executable.
 
-ENTRYPOINT will override all elements specified using CMD
+  1. ENTRYPOINT will override all elements specified using CMD
+  2. Both CMD and ENTRYPOINT instructions define what command gets executed when running a container. There are few rules that describe their co-operation.
 
-### Understand how CMD and ENTRYPOINT interact
+  3. Dockerfile should specify at least one of CMD or ENTRYPOINT commands.
 
-Both CMD and ENTRYPOINT instructions define what command gets executed when running a container. There are few rules that describe their co-operation.
+  4. ENTRYPOINT should be defined when using the container as an executable.
 
-Dockerfile should specify at least one of CMD or ENTRYPOINT commands.
+  5. CMD should be used as a way of defining default arguments for an ENTRYPOINT command or for executing an ad-hoc command in a container.
 
-- `ENTRYPOINT` -  should be defined when using the container as an executable.
-
-CMD should be used as a way of defining default arguments for an ENTRYPOINT command or for executing an ad-hoc command in a container.
-
-CMD will be overridden when running the container with alternative arguments.
+  6. CMD will be overridden when running the container with alternative arguments.
 
 - `VOLUME` - The VOLUME instruction creates a mount point with the specified name and marks it as holding externally mounted volumes from native host or other containers. 
 
