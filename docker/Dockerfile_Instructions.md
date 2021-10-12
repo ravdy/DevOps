@@ -17,7 +17,7 @@ DockerFile
  
  ```
 
-## Dockerfile Creating  
+## Dockerfile Creation  
 
  Docker file format
   ```sh
