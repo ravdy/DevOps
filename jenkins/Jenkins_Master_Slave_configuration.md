@@ -1,11 +1,11 @@
-# Jenkins master and Slave configuration
+# Jenkins Master and Slave configuration
 
 ## 🧰 Prerequisites
-1. Jenkins Server 
-2. Jenkins Agent server 
+1. Jenkins server 
+2. Slave server with Java installation 
 
 ## Procedure: 
-1. Goto Manage Nodes   
+1. Goto Manage Nodes    
    - Manage Jenkins --> Manage Nodes and Clouds --> New Node  
 
 2. Add the node name as Permanent Agent  
