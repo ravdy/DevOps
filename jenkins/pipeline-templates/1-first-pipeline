@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    stages{
+        stage('Checkout'){
+            steps{
+                echo "checkout code from SCM like Github URL"
+            }
+
+        stage('Build'){
+            steps{
+                echo "Build the SCM code and create package/artifact -usually mvn clean package for java"
+            }
+        }
+        stage('Test'){
+            step{
+                echo "Unit tes the application that is recently built"
+            }
+        }
+        stage('QualityCheck'){
+            step4{
+                echo "Apply sonarscanner and generate analysis report on sonarQube server"
+            }
+        }
+        stage("Deploy"){
+            step5{
+                echo "Deploy the unit tested code on any of the ec2-instance"
+            }
+        }
+            
+        }
+    }
+}
