@@ -1,4 +1,2 @@
 # DevOps #
-### This repository contains the documents related to DevOps
-
-s
+### This repository contains the documents related to DevOps.
