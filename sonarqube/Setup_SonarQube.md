@@ -36,8 +36,10 @@ Source: https://docs.sonarqube.org/latest/requirements/requirements/
    http://<Public-IP>:9000
    ```
 4. login sonarqube with below username and password.
-   usernae : admin
+
+   username : admin
    pwd :admin
+   
    ## 🧹 CleanUp  
    1. Stop SonarQube server
    ```sh 
