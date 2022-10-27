@@ -38,6 +38,7 @@ Source: https://docs.sonarqube.org/latest/requirements/requirements/
 4. login sonarqube with below username and password.
 
    username : admin
+   
    pwd :admin
    
    ## 🧹 CleanUp  
