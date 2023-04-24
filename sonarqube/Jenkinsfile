@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-        PATH = "Maven home: C:\Users\tarun\Desktop\maven\apache-maven-3.8.8"
+        PATH = ""$PATH:/C:/Users/tarun/Desktop/maven/apache-maven-3.8.8""
     }
     stages{
        stage('GetCode'){
@@ -15,8 +15,8 @@ pipeline{
             }
          }
         stage('SonarQube analysis') {
-//    def scannerHome = tool 'SonarScanner 4.0';
-        steps{
+//    
+        steps{def scannerHome = tool 'SonarScanner 4.0';
         withSonarQubeEnv('sonarqube') { 
         // If you have configured more than one global server connection, you can specify its name
 //      sh "${scannerHome}/bin/sonar-scanner"
