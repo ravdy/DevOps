@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-        PATH = "C:\Users\tarun\Desktop\maven\apache-maven-3.8.8\bin"
+        PATH = "Maven home: C:\Users\tarun\Desktop\maven\apache-maven-3.8.8"
     }
     stages{
        stage('GetCode'){
