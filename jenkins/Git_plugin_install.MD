@@ -1,4 +1,4 @@
-# Configure Git pulgin on Jenkins
+# Configure Git plugin on Jenkins
 Git is one of the most popular tool for version contorl system. you can pull code from git repositories using jenkins if you use github plugin. 
 
 #### Follow this artical in **[YouTube](https://www.youtube.com/watch?v=wgfsVmHnAiM)**
