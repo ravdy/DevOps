@@ -40,7 +40,7 @@ pipeline{
                     nexusUrl: '18.233.63.231:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
-                    repository: 'simpleapp-releases',
+                    repository: 'vprofile-release',
                     version: '1'
                 }
             }
