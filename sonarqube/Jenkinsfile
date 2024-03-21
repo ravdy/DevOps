@@ -1,12 +1,12 @@
 pipeline{
     agent any
     environment {
-        PATH = "$PATH:/opt/apache-maven-3.8.2/bin"
+        PATH = "$PATH:/usr/share/maven/bin"
     }
     stages{
        stage('GetCode'){
             steps{
-                git 'https://github.com/ravdy/javaloginapp.git'
+                git 'https://github.com/saikrishna-M-8520/DevOps.git'
             }
          }        
        stage('Build'){
@@ -17,13 +17,34 @@ pipeline{
         stage('SonarQube analysis') {
 //    def scannerHome = tool 'SonarScanner 4.0';
         steps{
-        withSonarQubeEnv('sonarqube-8.9') { 
+        withSonarQubeEnv('sonarqube-8.3') { 
         // If you have configured more than one global server connection, you can specify its name
 //      sh "${scannerHome}/bin/sonar-scanner"
         sh "mvn sonar:sonar"
     }
         }
         }
+        stage('Upload jar To Nexus'){
+            steps{
+                script{
+                    nexusArtifactUploader artifacts: [
+                        [
+                            artifactId: 'my-app', 
+                            classifier: '', 
+                            file: "target/my-app-1.jar", 
+                            type: 'jar'
+                        ]
+                    ], 
+                    credentialsId: 'nexus3', 
+                    groupId: 'com.mycompany.app', 
+                    nexusUrl: '13.201.168.183:8081', 
+                    nexusVersion: 'nexus3', 
+                    protocol: 'http', 
+                    repository: 'vprofile-release',
+                    version: '1'
+                }
+            }
+        }        
        
     }
 }
