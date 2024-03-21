@@ -37,7 +37,7 @@ pipeline{
                     ], 
                     credentialsId: 'nexus3', 
                     groupId: 'com.mycompany.app', 
-                    nexusUrl: '13.201.168.183:8081', 
+                    nexusUrl: '54.172.53.83:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
                     repository: 'vprofile-release',
